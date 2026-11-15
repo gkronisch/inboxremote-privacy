@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Inbox Remote privacy policy</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238873fb'/%3E%3Cstop offset='1' stop-color='%231cb6eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1024' height='1024' rx='225' fill='url(%23g)'/%3E%3Crect x='212' y='330' width='600' height='400' rx='60' fill='%23fff'/%3E%3Cpath d='M232 360 L512 560 L792 360' fill='none' stroke='%23c9c3f7' stroke-width='36' stroke-linejoin='round'/%3E%3Ccircle cx='760' cy='690' r='130' fill='%2318a46c' stroke='%23fff' stroke-width='28'/%3E%3Cpath d='M700 692 L745 737 L825 650' fill='none' stroke='%23fff' stroke-width='40' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fbfbfe;
+    --text: #1d1f2b;
+    --muted: #575c70;
+    --rule: #dfe0ea;
+    --accent: #4a5bd8;
+    --panel: #eef0fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #13141b;
+      --text: #e7e8f0;
+      --muted: #a5a9bb;
+      --rule: #2c2e3a;
+      --accent: #9fb0ff;
+      --panel: #1c1e29;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 0.25rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin-bottom: 1.5rem; }
+  .short {
+    background: var(--panel);
+    border-left: 4px solid var(--accent);
+    padding: 0.9rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .brand { display: flex; align-items: center; gap: 0.75rem; margin: 0 0 1.5rem; font-size: 1.15rem; font-weight: 600; }
+  .brand svg { width: 3rem; height: 3rem; flex: none; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg viewBox="0 0 1024 1024" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8873fb"/><stop offset="1" stop-color="#1cb6eb"/></linearGradient></defs><rect width="1024" height="1024" rx="225" fill="url(#g)"/><rect x="212" y="330" width="600" height="400" rx="60" fill="#fff"/><path d="M232 360 L512 560 L792 360" fill="none" stroke="#c9c3f7" stroke-width="36" stroke-linejoin="round"/><circle cx="760" cy="690" r="130" fill="#18a46c" stroke="#fff" stroke-width="28"/><path d="M700 692 L745 737 L825 650" fill="none" stroke="#fff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Inbox Remote</span>
+  </div>
+  <h1>Privacy policy for Inbox Remote</h1>
+  <p class="meta">Effective date: November 15, 2026</p>
+
+  <p>Inbox Remote is a phone remote control for an email-sorting server that you run yourself. It is published by Atlas Keystone LLC (&ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
+
+  <p class="short">The short version: the app talks to your own server, not to us. We don&rsquo;t receive your mail, your rules or anything else you do in the app, and we have no server that could.</p>
+
+  <h2>What the app stores on your phone</h2>
+  <ul>
+    <li>The address of your sorting server and the access token for this device, which you type in. Both are kept in the secure storage that Android provides for apps (the Android Keystore).</li>
+    <li>One display preference: whether to hide cards that a rule has already filed.</li>
+  </ul>
+  <p>Mail, rules and reports that the app shows are fetched from your server while you use it. They are held in memory to draw the screen and are not saved on the phone.</p>
+
+  <h2>What goes to your server</h2>
+  <p>To work, the app connects to the server address you entered and sends it:</p>
+  <ul>
+    <li>the access token, so your server knows the request comes from your device;</li>
+    <li>what you do in the app: the email you pressed a button on and the folder you chose, rules you add, change or delete (including sender and domain names), and reports you ask for.</li>
+  </ul>
+  <p>Your server sends back what the app shows: unread mail (sender, subject, a short preview, date and folder), your rules, counts and reports. That server is yours, or run for you by someone you chose. We do not run it and cannot reach it. The connection uses HTTPS; plain HTTP is allowed only for addresses on the phone itself or the Android emulator&rsquo;s link to its own computer, which are used for testing.</p>
+  <p>When you open a report, the app asks your server for a one-time link and hands it to your browser, which downloads the file from your server.</p>
+
+  <h2>What we receive</h2>
+  <p>Nothing. Inbox Remote has no ads, no analytics and no crash reporting, and it contains no advertising or tracking software from other companies.</p>
+
+  <h2>App updates from Expo</h2>
+  <p>When it starts, the app checks with Expo (the company whose tools the app is built with, at expo.dev) for a newer version of its own code, and downloads it if there is one. That check sends Expo the app&rsquo;s version details, the type of phone system (Android) and a random ID that the update system creates for this installation. It does not include your server address, your token or any mail. Expo handles these requests under its own privacy policy.</p>
+  <p>If you install the app from Google Play, Google handles the download under its own privacy policy. Google may show us overall figures, such as how many people installed the app, and crash reports from people who have chosen to share diagnostics with Google. These never include your mail.</p>
+
+  <h2>We don&rsquo;t share or sell your data</h2>
+  <p>We have nothing to share: your data never reaches us.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>On this phone.</strong> Uninstall the app, or open Android Settings &gt; Apps &gt; Inbox Remote &gt; Storage and choose Clear storage. This erases the server address, the token and the preference.</li>
+    <li><strong>On your server.</strong> Your mail, rules and history live on your server, so you delete them there. Turning off the device&rsquo;s token on your server stops this phone from connecting.</li>
+  </ul>
+
+  <h2>Who the app is for</h2>
+  <p>Inbox Remote is for adults aged 18 and over who run their own sorting server. It is not directed at children, and we do not knowingly collect information from anyone.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app changes in a way that affects your privacy, we will update this page and its effective date before the change reaches you.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:hello@atlaskeystone.llc">hello@atlaskeystone.llc</a></p>
+
+  <footer>Inbox Remote privacy policy</footer>
+</main>
+</body>
+</html>
